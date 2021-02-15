@@ -73,3 +73,14 @@
 **_Квартили_** – три значения признака, которые делят упорядоченное множество данных на четыре равные части.
 
 **_Межквартильный размах_** – разница между третьим и первым квартилем. Характеризует вариантивность изучаемого признака.
+
+## Нормальное распределение
+
+**_Нормальное распределение_** – унимодально, симметрично, отконения наблюдений от среднего подчиняются определенному вероятностному закону (правило <a href="https://www.codecogs.com/eqnedit.php?latex=2\sigma" target="_blank"><img src="https://latex.codecogs.com/png.latex?2\sigma" title="2\sigma" /></a> и <a href="https://www.codecogs.com/eqnedit.php?latex=3\sigma" target="_blank"><img src="https://latex.codecogs.com/png.latex?3\sigma" title="3\sigma" /></a>):
+1. <a href="https://www.codecogs.com/eqnedit.php?latex=P(\overline{x}&space;-&space;\sigma&space;<&space;X&space;<&space;\overline{x}&space;&plus;&space;\sigma)&space;=&space;0.68" target="_blank"><img src="https://latex.codecogs.com/png.latex?P(\overline{x}&space;-&space;\sigma&space;<&space;X&space;<&space;\overline{x}&space;&plus;&space;\sigma)&space;=&space;0.68" title="P(\overline{x} - \sigma < X < \overline{x} + \sigma) = 0.68" /></a>
+2. <a href="https://www.codecogs.com/eqnedit.php?latex=P(\overline{x}&space;-&space;2\sigma&space;<&space;X&space;<&space;\overline{x}&space;&plus;&space;2\sigma)&space;=&space;0.95" target="_blank"><img src="https://latex.codecogs.com/png.latex?P(\overline{x}&space;-&space;2\sigma&space;<&space;X&space;<&space;\overline{x}&space;&plus;&space;2\sigma)&space;=&space;0.95" title="P(\overline{x} - 2\sigma < X < \overline{x} + 2\sigma) = 0.95" /></a>
+3. <a href="https://www.codecogs.com/eqnedit.php?latex=P(\overline{x}&space;-&space;3\sigma&space;<&space;X&space;<&space;\overline{x}&space;&plus;&space;3\sigma)&space;=&space;0.98" target="_blank"><img src="https://latex.codecogs.com/png.latex?P(\overline{x}&space;-&space;3\sigma&space;<&space;X&space;<&space;\overline{x}&space;&plus;&space;3\sigma)&space;=&space;0.98" title="P(\overline{x} - 3\sigma < X < \overline{x} + 3\sigma) = 0.98" /></a>
+
+**_Стандартизация (Z-преобразование)_** – преобразование полученных данных в стандартную Z-шкалу (Z-scores) со средним <a href="https://www.codecogs.com/eqnedit.php?latex=M_{z}&space;=&space;0,&space;D_{z}&space;=&space;1" target="_blank"><img src="https://latex.codecogs.com/png.latex?M_{z}&space;=&space;0,&space;D_{z}&space;=&space;1" title="M_{z} = 0, D_{z} = 1" /></a>:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=z_{i}&space;=&space;\frac{x_{i}&space;-&space;\overline{X}}{sd_{x}}" target="_blank"><img src="https://latex.codecogs.com/png.latex?z_{i}&space;=&space;\frac{x_{i}&space;-&space;\overline{X}}{sd_{x}}" title="z_{i} = \frac{x_{i} - \overline{X}}{sd_{x}}" /></a>
