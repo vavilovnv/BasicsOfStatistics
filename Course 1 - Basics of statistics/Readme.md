@@ -84,3 +84,9 @@
 **_Стандартизация (Z-преобразование)_** – преобразование полученных данных в стандартную Z-шкалу (Z-scores) со средним <a href="https://www.codecogs.com/eqnedit.php?latex=M_{z}&space;=&space;0,&space;D_{z}&space;=&space;1" target="_blank"><img src="https://latex.codecogs.com/png.latex?M_{z}&space;=&space;0,&space;D_{z}&space;=&space;1" title="M_{z} = 0, D_{z} = 1" /></a>:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=z_{i}&space;=&space;\frac{x_{i}&space;-&space;\overline{X}}{sd_{x}}" target="_blank"><img src="https://latex.codecogs.com/png.latex?z_{i}&space;=&space;\frac{x_{i}&space;-&space;\overline{X}}{sd_{x}}" title="z_{i} = \frac{x_{i} - \overline{X}}{sd_{x}}" /></a>
+
+## Центральная предельная теорема
+
+**_Стандартная ошибка среднего_** - стандартное отклонение симметричного распределения выборочных средних вокруг среднего значения генеральной совокупности при многократном повторении эксперимента: 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=se_{x}&space;=&space;\frac{\sigma&space;}{\sqrt{n}}&space;=&space;\frac{sd_{x}}{\sqrt{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?se_{x}&space;=&space;\frac{\sigma&space;}{\sqrt{n}}&space;=&space;\frac{sd_{x}}{\sqrt{n}}" title="se_{x} = \frac{\sigma }{\sqrt{n}} = \frac{sd_{x}}{\sqrt{n}}" /></a> при _n_ > 30.
