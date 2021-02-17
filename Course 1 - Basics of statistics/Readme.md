@@ -90,3 +90,22 @@
 **_Стандартная ошибка среднего_** - стандартное отклонение симметричного распределения выборочных средних вокруг среднего значения генеральной совокупности при многократном повторении эксперимента: 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=se_{x}&space;=&space;\frac{\sigma&space;}{\sqrt{n}}&space;=&space;\frac{sd_{x}}{\sqrt{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?se_{x}&space;=&space;\frac{\sigma&space;}{\sqrt{n}}&space;=&space;\frac{sd_{x}}{\sqrt{n}}" title="se_{x} = \frac{\sigma }{\sqrt{n}} = \frac{sd_{x}}{\sqrt{n}}" /></a> при _n_ > 30.
+
+## Доверительный интервал для среднего
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\left&space;[&space;\mu&space;-&space;1.96\sigma,&space;\mu&space;&plus;&space;1.96\sigma&space;\right]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left&space;[&space;\mu&space;-&space;1.96\sigma,&space;\mu&space;&plus;&space;1.96\sigma&space;\right]" title="\left [ \mu - 1.96\sigma, \mu + 1.96\sigma \right]" /></a> – 95% попадание среднего генеральной совокупности <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu" title="\mu" /></a> в данный интервал (из всех выборочных средних).
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\left&space;[&space;\mu&space;-&space;2.58\sigma,&space;\mu&space;&plus;&space;2.58\sigma&space;\right]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left&space;[&space;\mu&space;-&space;2.58\sigma,&space;\mu&space;&plus;&space;2.58\sigma&space;\right]" title="\left [ \mu - 2.58\sigma, \mu + 2.58\sigma \right]" /></a> – 99% доверительный интервал.
+
+
+## Идея статистического вывода
+
+**_Нулевая гипотеза_** <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}" title="H_{0}" /></a> – отсутствие значимых различий между средним значением выборки и средним значением генеральной совокупности.
+
+**_Альтернативная гипотеза_** <a href="https://www.codecogs.com/eqnedit.php?latex=H_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{1}" title="H_{1}" /></a> – значимое отклонение между средним значением выборки и средним значением генеральной совокупности.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\rho" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho" title="\rho" /></a>**_-уровень значимости_** – вероятность получения такого или еще более сильного отклонения от среднего значения, если верна <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}" title="H_{0}" /></a>. Чем меньше <a href="https://www.codecogs.com/eqnedit.php?latex=\rho" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho" title="\rho" /></a>, тем больше оснований отклонить нулевую гипотезу. Обычно при <a href="https://www.codecogs.com/eqnedit.php?latex=\rho" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho" title="\rho" /></a> < 0.05 принимаем <a href="https://www.codecogs.com/eqnedit.php?latex=H_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{1}" title="H_{1}" /></a>, т.е. мы получили статистически значимое отклонение.
+
+**_Ошибка 1 типа_** – приняли альтернативную гипотезу, хотя верна нулевая.
+
+**_Ошибка 2 типа_** – приняли нулевую гипотезу, хотя верна альтернативная.
