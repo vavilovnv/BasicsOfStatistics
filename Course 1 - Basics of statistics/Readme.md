@@ -109,3 +109,10 @@
 **_Ошибка 1 типа_** – приняли альтернативную гипотезу, хотя верна нулевая.
 
 **_Ошибка 2 типа_** – приняли нулевую гипотезу, хотя верна альтернативная.
+
+
+## Распределение Стьюдента
+
+Если число наблюдений невелико (n < 30) и <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma" title="\sigma" /></a> неизвестно, то используется **_распределение Стьюдента_** (t-distribution): унимодально, симметрично, но наблюдения с большей вероятностью попадают за пределы <a href="https://www.codecogs.com/eqnedit.php?latex=\pm&space;2\sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pm&space;2\sigma" title="\pm 2\sigma" /></a> от среднего значения <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu" title="\mu" /></a>, чем при нормальном распределении.
+
+Форма распределения определяется числом **_степеней свободы_** (_df = n - 1_, degrees of freedom), c увелечением _df_ распределение стремится к нормальному.
