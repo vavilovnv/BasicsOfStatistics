@@ -116,3 +116,24 @@
 Если число наблюдений невелико (n < 30) и <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma" title="\sigma" /></a> неизвестно, то используется **_распределение Стьюдента_** (t-distribution): унимодально, симметрично, но наблюдения с большей вероятностью попадают за пределы <a href="https://www.codecogs.com/eqnedit.php?latex=\pm&space;2\sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pm&space;2\sigma" title="\pm 2\sigma" /></a> от среднего значения <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu" title="\mu" /></a>, чем при нормальном распределении.
 
 Форма распределения определяется числом **_степеней свободы_** (_df = n - 1_, degrees of freedom), c увелечением _df_ распределение стремится к нормальному.
+
+**Критерий Стьюдента**
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:M_{1}&space;=&space;M_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:M_{1}&space;=&space;M_{2}" title="H_{0}:M_{1} = M_{2}" /></a>   <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:M_{1}&space;\neq&space;M_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:M_{1}&space;\neq&space;M_{2}" title="H_{0}:M_{1} \neq M_{2}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=X_{1}&space;-&space;X_{2}&space;\in&space;t&space;(df&space;=&space;n_{1}&space;&plus;&space;n_{2}&space;-&space;2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{1}&space;-&space;X_{2}&space;\in&space;t&space;(df&space;=&space;n_{1}&space;&plus;&space;n_{2}&space;-&space;2)" title="X_{1} - X_{2} \in t (df = n_{1} + n_{2} - 2)" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=se&space;=&space;\sqrt{\frac{sd_{1}^{2}}{n_{1}}&space;&plus;&space;\frac{sd_{2}^{2}}{n_{2}}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?se&space;=&space;\sqrt{\frac{sd_{1}^{2}}{n_{1}}&space;&plus;&space;\frac{sd_{2}^{2}}{n_{2}}}" title="se = \sqrt{\frac{sd_{1}^{2}}{n_{1}} + \frac{sd_{2}^{2}}{n_{2}}}" /></a>, <a href="https://www.codecogs.com/eqnedit.php?latex=t&space;=&space;\frac{\overline{X_{1}}&space;-&space;\overline{X_{2}}}{se}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t&space;=&space;\frac{\overline{X_{1}}&space;-&space;\overline{X_{2}}}{se}" title="t = \frac{\overline{X_{1}} - \overline{X_{2}}}{se}" /></a>
+
+Зная число степеней свободы и _t_-значение, мы можем расчитать _p_-уровень значимости.
+
+**Применимость критерия Стьюдента:**
+
+1. Гомогенность дисперсий (приблизительно одинаковы), можно проверить используя критерий Левена или критерий Фишера.
+2. Нормальность распределения при _n_ < 30.
+
+**Проверка на нормальность**
+
+Тест Колмагорова-Смирнова и критерий Шапиро-Уилка: если получаем _p_-уровень значимости больше 0.05, значит наша выборка значимо не отличается от нормальной.
+
+**Критерий Манна-Уитни** переходит к ранжиорванным значениям и может быть использован при наличии значительных выбросов в выборке.
