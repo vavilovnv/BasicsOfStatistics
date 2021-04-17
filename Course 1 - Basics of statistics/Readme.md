@@ -7,8 +7,6 @@
 ## Все условные обозначения встречаемые по тексту ниже  
 <a href="https://www.codecogs.com/eqnedit.php?latex=M_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?M_{x}" title="M_{x}" /></a> – среднее значение генеральной совокупности  
 <a href="https://www.codecogs.com/eqnedit.php?latex=\overline{X}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\overline{X}" title="\overline{X}" /></a> – среднее значение выборки  
-<a href="https://www.codecogs.com/eqnedit.php?latex=M_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?M_{x}" title="M_{x}" /></a> – среднее значение генеральной совокупности  
-<a href="https://www.codecogs.com/eqnedit.php?latex=\overline{X}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\overline{X}" title="\overline{X}" /></a> – среднее значение выборки  
 <a href="https://www.codecogs.com/eqnedit.php?latex=D_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?D_{x}" title="D_{x}" /></a> – дисперсия генеральной совокупности  
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/png.latex?\sigma" title="\sigma" /></a> – стандартное отклонение генеральной совокупности  
 <a href="https://www.codecogs.com/eqnedit.php?latex=sd_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?sd_{x}" title="sd_{x}" /></a> – стандартное отклонение выборки
@@ -144,6 +142,6 @@
 
 **Проверка на нормальность**
 
-**Тест Колмагорова-Смирнова** и **критерий Шапиро-Уилка**: если получаем _p_-уровень значимости больше 0.05, значит наша выборка значимо не отличается от нормальной.
+* **Тест Колмагорова-Смирнова** и **критерий Шапиро-Уилка**: если получаем _p_-уровень значимости больше 0.05, значит наша выборка значимо не отличается от нормальной.
 
-**Критерий Манна-Уитни** переходит к ранжиорванным значениям и может быть использован при наличии значительных выбросов в выборке.
+* **Критерий Манна-Уитни** переходит к ранжированным значениям и может быть использован при наличии значительных выбросов в выборке.
