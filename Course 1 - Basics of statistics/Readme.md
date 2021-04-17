@@ -4,7 +4,17 @@
 
 **_Выборка_** – часть генеральной совокупности элементов, которая охватывается экспериментом, наблюдением, опросом.
 
-## Виды выборок:
+## Все условные обозначения встречаемые по тексту ниже  
+<a href="https://www.codecogs.com/eqnedit.php?latex=M_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?M_{x}" title="M_{x}" /></a> – среднее значение генеральной совокупности  
+<a href="https://www.codecogs.com/eqnedit.php?latex=\overline{X}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\overline{X}" title="\overline{X}" /></a> – среднее значение выборки  
+<a href="https://www.codecogs.com/eqnedit.php?latex=M_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?M_{x}" title="M_{x}" /></a> – среднее значение генеральной совокупности  
+<a href="https://www.codecogs.com/eqnedit.php?latex=\overline{X}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\overline{X}" title="\overline{X}" /></a> – среднее значение выборки  
+<a href="https://www.codecogs.com/eqnedit.php?latex=D_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?D_{x}" title="D_{x}" /></a> – дисперсия генеральной совокупности  
+<a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/png.latex?\sigma" title="\sigma" /></a> – стандартное отклонение генеральной совокупности  
+<a href="https://www.codecogs.com/eqnedit.php?latex=sd_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?sd_{x}" title="sd_{x}" /></a> – стандартное отклонение выборки
+
+
+## Виды выборок
 
 * Простая случайная выборка (simple random sample)
 * Стратифицированная выборка (stratified sample)
@@ -24,9 +34,9 @@
 
 **_Dot plot (точечный график)_** – график, в котором каждой точке соответствует одно значение выборки.
 
-**_Box plot (ящик с усами)_** – график, показывающий медиану, нижний и верхний квартили, минимальное и максимальное значение выборки и выбросы. В ящик попадют значения (50% измерений), лежащих между квантилями <a href="https://www.codecogs.com/eqnedit.php?latex=x_{0,25}" target="_blank"><img src="https://latex.codecogs.com/png.latex?x_{0,25}" title="x_{0,25}" /></a> и <a href="https://www.codecogs.com/eqnedit.php?latex=x_{0.25}" target="_blank"><img src="https://latex.codecogs.com/png.latex?x_{0,25}" title="x_{0.75}" /></a>. Вверх и вниз от ящика исходят два отрезка равные <a href="https://www.codecogs.com/eqnedit.php?latex=1.5&space;*&space;(x_{0,75}&space;-&space;x_{0,25})" target="_blank"><img src="https://latex.codecogs.com/png.latex?1.5&space;*&space;(x_{0,75}&space;-&space;x_{0,25})" title="1.5 * (x_{0,75} - x_{0,25})" /></a>, то есть полтора межквартильных размаха. Точки, превышающие с своем отклонении полтора межквартильных размаха, отображаются отдельно.
+**_Box plot (ящик с усами)_** – график, показывающий медиану, нижний и верхний квартили, минимальное и максимальное значение выборки и выбросы. В ящик попадют значения (50% измерений), лежащих между квантилями <a href="https://www.codecogs.com/eqnedit.php?latex=x_{0,25}" target="_blank"><img src="https://latex.codecogs.com/png.latex?x_{0,25}" title="x_{0,25}" /></a> и <a href="https://www.codecogs.com/eqnedit.php?latex=x_{0.25}" target="_blank"><img src="https://latex.codecogs.com/png.latex?x_{0,75}" title="x_{0.75}" /></a>. Вверх и вниз от ящика исходят два отрезка равные <a href="https://www.codecogs.com/eqnedit.php?latex=1.5&space;*&space;(x_{0,75}&space;-&space;x_{0,25})" target="_blank"><img src="https://latex.codecogs.com/png.latex?1.5&space;*&space;(x_{0,75}&space;-&space;x_{0,25})" title="1.5 * (x_{0,75} - x_{0,25})" /></a>, то есть полтора межквартильных размаха. Точки, превышающие в своем отклонении полтора межквартильных размаха, отображаются отдельно.
 
-**_Q-Q plot (график квантиль-квантиль)_** – показывает насколько выборочное значение соответствует нормальному распределению, линия – идеальное нормальное распределение.
+**_Q-Q plot (график квантиль-квантиль)_** – показывает насколько выборочное значение соответствует нормальному распределению. Линия – идеальное нормальное распределение.
 
 **_Scatter plot (диаграмма рассеяния)_** – диагрмма, изображающая значения двух переменных в виде точек на декартовой плоскости.
 
@@ -34,7 +44,7 @@
 
 ## Меры центральной тенденции
 
-**_Мода (mode)_** – значение признака, котороые встречается максимально часто.
+**_Мода (mode)_** – значение признака, который встречается максимально часто.
 
 **_Медиана (median)_** – значение признака, которое делит упорядоченное множество данных пополам.
 
