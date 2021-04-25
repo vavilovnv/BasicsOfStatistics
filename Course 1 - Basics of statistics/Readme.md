@@ -9,7 +9,8 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=\overline{X}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\overline{X}" title="\overline{X}" /></a> – среднее значение выборки  
 <a href="https://www.codecogs.com/eqnedit.php?latex=D_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?D_{x}" title="D_{x}" /></a> – дисперсия генеральной совокупности  
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/png.latex?\sigma" title="\sigma" /></a> – стандартное отклонение генеральной совокупности  
-<a href="https://www.codecogs.com/eqnedit.php?latex=sd_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?sd_{x}" title="sd_{x}" /></a> – стандартное отклонение выборки
+<a href="https://www.codecogs.com/eqnedit.php?latex=sd_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?sd_{x}" title="sd_{x}" /></a> – стандартное отклонение выборки  
+<a href="https://www.codecogs.com/eqnedit.php?latex=se" target="_blank"><img src="https://latex.codecogs.com/gif.latex?se" title="se" /></a> - стандартная ошибка среднего
 
 
 ## Виды выборок
