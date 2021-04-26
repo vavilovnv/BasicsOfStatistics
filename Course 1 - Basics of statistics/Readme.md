@@ -146,3 +146,13 @@
 * **Тест Колмагорова-Смирнова** и **критерий Шапиро-Уилка**: если получаем _p_-уровень значимости больше 0.05, значит наша выборка значимо не отличается от нормальной.
 
 * **Критерий Манна-Уитни** переходит к ранжированным значениям и может быть использован при наличии значительных выбросов в выборке.
+
+## Дисперсионный анализ
+*ANOVA, ANalysis Of VAriance* – позволяет сранивать среднее значение трех и более групп.  
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:M_{1}&space;=&space;M_{2}&space;=&space;M_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:M_{1}&space;=&space;M_{2}&space;=&space;M_{3}" title="H_{0}:M_{1} = M_{2} = M_{3}" /></a>  <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:!(M_{1}&space;=&space;M_{2}&space;=&space;M_{3})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:!(M_{1}&space;=&space;M_{2}&space;=&space;M_{3})" title="H_{0}:!(M_{1} = M_{2} = M_{3})" /></a>  
+Мы говорим, что вся изменчивость наших данных (*SST*) может быть обусловлена изменчивостью внутри групп (*SSW*) и изменчивостью между группами (*SSB*).
+
+Если *SSB* ≫ *SSW*, то весьма вероятно что как минимум два средних значения отличаются друг от друга. Основной статистический показатель – критерий Фишера:  <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{SSB}{(m-1)}\div&space;\frac{SSW}{n-m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{SSB}{(m-1)}\div&space;\frac{SSW}{n-m}" title="F = \frac{SSB}{(m-1)}\div \frac{SSW}{n-m}" /></a>  
+где  *n* – размер выборки, *m* – количество групп.
+
+
