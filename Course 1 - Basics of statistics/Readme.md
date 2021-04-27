@@ -9,6 +9,7 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=\overline{X}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\overline{X}" title="\overline{X}" /></a> – среднее значение выборки  
 <a href="https://www.codecogs.com/eqnedit.php?latex=D_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?D_{x}" title="D_{x}" /></a> – дисперсия генеральной совокупности  
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/png.latex?\sigma" title="\sigma" /></a> – стандартное отклонение генеральной совокупности  
+*df* - число степеней свободы  
 <a href="https://www.codecogs.com/eqnedit.php?latex=sd_{x}" target="_blank"><img src="https://latex.codecogs.com/png.latex?sd_{x}" title="sd_{x}" /></a> – стандартное отклонение выборки  
 <a href="https://www.codecogs.com/eqnedit.php?latex=se" target="_blank"><img src="https://latex.codecogs.com/gif.latex?se" title="se" /></a> - стандартная ошибка среднего
 
@@ -150,9 +151,10 @@
 ## Дисперсионный анализ
 *ANOVA, ANalysis Of VAriance* – позволяет сранивать среднее значение трех и более групп.  
 <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:M_{1}&space;=&space;M_{2}&space;=&space;M_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:M_{1}&space;=&space;M_{2}&space;=&space;M_{3}" title="H_{0}:M_{1} = M_{2} = M_{3}" /></a>  <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:!(M_{1}&space;=&space;M_{2}&space;=&space;M_{3})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:!(M_{1}&space;=&space;M_{2}&space;=&space;M_{3})" title="H_{0}:!(M_{1} = M_{2} = M_{3})" /></a>  
-Мы говорим, что вся изменчивость наших данных (*SST*) может быть обусловлена изменчивостью внутри групп (*SSW*) и изменчивостью между группами (*SSB*).
+Мы говорим, что вся изменчивость наших данных без разделения на группы *SST* (Total Sum of Squares - общая сумма квадратов) может быть обусловлена изменчивостью внутри групп *SSW* (Sum of Squares Within groups - сумма квадратов внутригрупповая) и изменчивостью между группами *SSB* (Sum of Squares Between groups - cумма квадратов межгрупповая).
 
-Если *SSB* ≫ *SSW*, то весьма вероятно что как минимум два средних значения отличаются друг от друга. Основной статистический показатель – критерий Фишера:  <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{SSB}{(m-1)}\div&space;\frac{SSW}{n-m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{SSB}{(m-1)}\div&space;\frac{SSW}{n-m}" title="F = \frac{SSB}{(m-1)}\div \frac{SSW}{n-m}" /></a>  
+Если *SSB* ≫ *SSW*, то весьма вероятно что как минимум два средних значения отличаются друг от друга. Основной статистический показатель – критерий Фишера:  
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{SSB}{m-1}&space;/&space;\frac{SSW}{n-m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{SSB}{m-1}&space;/&space;\frac{SSW}{n-m}" title="F = \frac{SSB}{m-1} / \frac{SSW}{n-m}" /></a>  
 где  *n* – размер выборки, *m* – количество групп.
 
 
