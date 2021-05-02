@@ -158,4 +158,23 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{SSB}{m-1}&space;/&space;\frac{SSW}{n-m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{SSB}{m-1}&space;/&space;\frac{SSW}{n-m}" title="F = \frac{SSB}{m-1} / \frac{SSW}{n-m}" /></a>  
 где  *n* – размер выборки, *m* – количество групп.
 
+## Поправка Бонферрони
+
+*Bonferroni correction* – при увелечении количества групп, необходима корректировка значения *p*-уровня значимости. Необходимо *p*-уровень значимости разделить на количество парных сравнений в эксперименте: <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{m(m-1)}{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{m(m-1)}{2}" title="\frac{m(m-1)}{2}" /></a>.
+
+## Критерий Тьюки
+
+*Tukey HSD* – расчитываются доверительные интервалы разности между средними значениями групп. Является менее консервативным, чем поправка Бонферрони.
+
+## Многофакторный дисперсионный анализ
+
+*MANOVA, Multivariate analysis of variance* – позволяет сранивать среднее значение трех и более групп в зависимости от нескольких переменных. Вся изменчивость обусловлена:  
+<a href="https://www.codecogs.com/eqnedit.php?latex=SST&space;=&space;SSW&space;&plus;&space;SSB_{A}&space;&plus;&space;SSB_{B}&space;&plus;&space;SSB_{A}&space;*&space;SSB_{B}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SST&space;=&space;SSW&space;&plus;&space;SSB_{A}&space;&plus;&space;SSB_{B}&space;&plus;&space;SSB_{A}&space;*&space;SSB_{B}" title="SST = SSW + SSB_{A} + SSB_{B} + SSB_{A} * SSB_{B}" /></a>
+
+
+
+
+
+
+
 
