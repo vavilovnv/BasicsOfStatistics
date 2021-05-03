@@ -171,7 +171,21 @@
 *MANOVA, Multivariate analysis of variance* – позволяет сранивать среднее значение трех и более групп в зависимости от нескольких переменных. Вся изменчивость обусловлена:  
 <a href="https://www.codecogs.com/eqnedit.php?latex=SST&space;=&space;SSW&space;&plus;&space;SSB_{A}&space;&plus;&space;SSB_{B}&space;&plus;&space;SSB_{A}&space;*&space;SSB_{B}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SST&space;=&space;SSW&space;&plus;&space;SSB_{A}&space;&plus;&space;SSB_{B}&space;&plus;&space;SSB_{A}&space;*&space;SSB_{B}" title="SST = SSW + SSB_{A} + SSB_{B} + SSB_{A} * SSB_{B}" /></a>
 
+## Корреляция
 
+**_Коэффициент ковариации_** – мера линейной зависимости двух переменных:  
+<a href="https://www.codecogs.com/eqnedit.php?latex=cov_{XY}&space;=&space;\frac{\sum_{i}^{}(x_{i}&space;-&space;\overline{X})&space;*&space;(y_{i}&space;-&space;\overline{Y})}{N&space;-&space;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?cov_{XY}&space;=&space;\frac{\sum_{i}^{}(x_{i}&space;-&space;\overline{X})&space;*&space;(y_{i}&space;-&space;\overline{Y})}{N&space;-&space;1}" title="cov_{XY} = \frac{\sum_{i}^{}(x_{i} - \overline{X}) * (y_{i} - \overline{Y})}{N - 1}" /></a>
+
+**_Коэффициент корреляции Пирсона_** – показатель силы и направления взаимосвязи двух количественных переменных, знак показывает направление взаимосвязи:  
+<a href="https://www.codecogs.com/eqnedit.php?latex=r_{XY}&space;=&space;\frac{cov_{XY}}{\sigma_{X}\cdot\sigma_{Y}}&space;\in&space;[-1;&space;1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?r_{XY}&space;=&space;\frac{cov_{XY}}{\sigma_{X}\cdot\sigma_{Y}}&space;\in&space;[-1;&space;1]" title="r_{XY} = \frac{cov_{XY}}{\sigma_{X}\cdot\sigma_{Y}} \in [-1; 1]" /></a>
+
+**_Коэффициент детерменации_** <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;=&space;(r_{XY})^{2}&space;\in&space;[0;&space;1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;=&space;(r_{XY})^{2}&space;\in&space;[0;&space;1]" title="R^{2} = (r_{XY})^{2} \in [0; 1]" /></a> – показывает в какой степени дисперсия одной переменной обусловлена влиянием другой переменной.
+
+**Особенности корреляции:**
+
+* Коэффициент корреляции применим если взаимосвязь линейна и монотонна, а также при отсутствии значительных выбросов (иначе необходимо использовать непараметрические аналоги).
+* Положительная или отрицательная корреляция не говорит о причинно-следственной зависимости между переменными.
+* Корреляция между двумя переменными может обуславливаться существованием третьей переменной, влияющей на обе эти переменные.
 
 
 
