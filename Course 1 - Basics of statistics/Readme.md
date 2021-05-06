@@ -179,7 +179,7 @@
 **_Коэффициент корреляции Пирсона_** – показатель силы и направления взаимосвязи двух количественных переменных, знак показывает направление взаимосвязи:  
 <a href="https://www.codecogs.com/eqnedit.php?latex=r_{XY}&space;=&space;\frac{cov_{XY}}{\sigma_{X}\cdot\sigma_{Y}}&space;\in&space;[-1;&space;1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?r_{XY}&space;=&space;\frac{cov_{XY}}{\sigma_{X}\cdot\sigma_{Y}}&space;\in&space;[-1;&space;1]" title="r_{XY} = \frac{cov_{XY}}{\sigma_{X}\cdot\sigma_{Y}} \in [-1; 1]" /></a>
 
-**_Коэффициент детерменации_** <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;=&space;(r_{XY})^{2}&space;\in&space;[0;&space;1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;=&space;(r_{XY})^{2}&space;\in&space;[0;&space;1]" title="R^{2} = (r_{XY})^{2} \in [0; 1]" /></a> – показывает в какой степени дисперсия одной переменной обусловлена влиянием другой переменной.
+**_Коэффициент детерминации_** <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;=&space;(r_{XY})^{2}&space;\in&space;[0;&space;1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;=&space;(r_{XY})^{2}&space;\in&space;[0;&space;1]" title="R^{2} = (r_{XY})^{2} \in [0; 1]" /></a> – показывает в какой степени дисперсия одной переменной обусловлена влиянием другой переменной.
 
 **Особенности корреляции:**
 
@@ -187,6 +187,28 @@
 * Положительная или отрицательная корреляция не говорит о причинно-следственной зависимости между переменными.
 * Корреляция между двумя переменными может обуславливаться существованием третьей переменной, влияющей на обе эти переменные.
 
+**Непараметрические аналоги коэффициента корреляции Пирсона**
+
+Коффициенты корреляции Спирмана и Кендалла, так же как и критерий Манна-Уитни, переходят от реальных значений переменных к ранжированным значениям.
+
+## Регрессионный анализ
+
+Одномерный регрессионный анализ применяется для исследования взаимосвязи двух количественных переменных (независимая переменная –  предиктор и зависимая переменная –  критериальная). Изучает как одна переменная определяет или позваляет предсказать другую переменную.
+
+**Линия регрессии**
+
+Линия тренда задается уравнением <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;b_{0}&space;&plus;&space;b_{1}x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;b_{0}&space;&plus;&space;b_{1}x" title="y = b_{0} + b_{1}x" /></a>, где <a href="https://www.codecogs.com/eqnedit.php?latex=b_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{0}" title="b_{0}" /></a> – свободный член (intercept), который отвечает за значение *y*, где линия пересечет ось Y; <a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{1}" title="b_{1}" /></a> – угловой коэффицент (slope).
+
+Необходимо подобрать <a href="https://www.codecogs.com/eqnedit.php?latex=b_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{0}" title="b_{0}" /></a> и <a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{1}" title="b_{1}" /></a> так, чтобы линия максимально адекватно отображала связь данных переменных, при этом выдвигается гипотеза <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}" title="H_{0}" /></a>: <a href="https://www.codecogs.com/eqnedit.php?latex=b_{0}&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{0}&space;=&space;0" title="b_{0} = 0" /></a>.
+
+**Метод наименьших квадратов**
+
+Метод нахождения оптимальных параметров линейной регресии, таких, что сумма квадратов ошибок (остатков) была минимальна. Остаток – расстояние от реального значения до предсказаннного значения, лежащего на прямой (линии регрессии).  
+<a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}&space;=&space;\frac{sd_{Y}}{sd_{X}}\cdot&space;r_{XY}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{1}&space;=&space;\frac{sd_{Y}}{sd_{X}}\cdot&space;r_{XY}" title="b_{1} = \frac{sd_{Y}}{sd_{X}}\cdot r_{XY}" /></a>  
+<a href="https://www.codecogs.com/eqnedit.php?latex=b_{0}&space;=&space;\overline{Y}&space;-&space;b_{1}&space;\cdot&space;\overline{X}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{0}&space;=&space;\overline{Y}&space;-&space;b_{1}&space;\cdot&space;\overline{X}" title="b_{0} = \overline{Y} - b_{1} \cdot \overline{X}" /></a>
+
+**_Коэффициент детерминации_** – доля дисперсии зависимой переменной _Y_, объясняемая регресионной моделью:  <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;=&space;1&space;-&space;\frac{SS_{res}}{SS_{total}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;=&space;1&space;-&space;\frac{SS_{res}}{SS_{total}}" title="R^{2} = 1 - \frac{SS_{res}}{SS_{total}}" /></a>  
+где <a href="https://www.codecogs.com/eqnedit.php?latex=SS_{res}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SS_{res}" title="SS_{res}" /></a> (residuals) - сумма квадратов остатков (расстояний до регрессионой прямой), а <a href="https://www.codecogs.com/eqnedit.php?latex=SS_{total}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SS_{total}" title="SS_{total}" /></a> - общая изменчивость (сумма квадратов расстояний до прямой <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;\overline{Y}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;\overline{Y}" title="y = \overline{Y}" /></a>). Таким образом, <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;\approx&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;\approx&space;1" title="R^{2} \approx 1" /></a> означает, что почти вся изменчивость переменной объясняется нашей регрессионной моделью.
 
 
 
