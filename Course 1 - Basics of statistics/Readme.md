@@ -158,11 +158,11 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{SSB}{m-1}&space;/&space;\frac{SSW}{n-m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{SSB}{m-1}&space;/&space;\frac{SSW}{n-m}" title="F = \frac{SSB}{m-1} / \frac{SSW}{n-m}" /></a>  
 где  *n* – размер выборки, *m* – количество групп.
 
-## Поправка Бонферрони
+**Поправка Бонферрони**
 
 *Bonferroni correction* – при увелечении количества групп, необходима корректировка значения *p*-уровня значимости. Необходимо *p*-уровень значимости разделить на количество парных сравнений в эксперименте: <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{m(m-1)}{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{m(m-1)}{2}" title="\frac{m(m-1)}{2}" /></a>.
 
-## Критерий Тьюки
+**Критерий Тьюки**
 
 *Tukey HSD* – расчитываются доверительные интервалы разности между средними значениями групп. Является менее консервативным, чем поправка Бонферрони.
 
@@ -207,7 +207,8 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}&space;=&space;\frac{sd_{Y}}{sd_{X}}\cdot&space;r_{XY}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{1}&space;=&space;\frac{sd_{Y}}{sd_{X}}\cdot&space;r_{XY}" title="b_{1} = \frac{sd_{Y}}{sd_{X}}\cdot r_{XY}" /></a>  
 <a href="https://www.codecogs.com/eqnedit.php?latex=b_{0}&space;=&space;\overline{Y}&space;-&space;b_{1}&space;\cdot&space;\overline{X}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{0}&space;=&space;\overline{Y}&space;-&space;b_{1}&space;\cdot&space;\overline{X}" title="b_{0} = \overline{Y} - b_{1} \cdot \overline{X}" /></a>
 
-**_Коэффициент детерминации_** – доля дисперсии зависимой переменной _Y_, объясняемая регресионной моделью:  <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;=&space;1&space;-&space;\frac{SS_{res}}{SS_{total}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;=&space;1&space;-&space;\frac{SS_{res}}{SS_{total}}" title="R^{2} = 1 - \frac{SS_{res}}{SS_{total}}" /></a>  
+**_Коэффициент детерминации_** – доля дисперсии зависимой переменной _Y_, объясняемая регресионной моделью:  
+<a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;=&space;1&space;-&space;\frac{SS_{res}}{SS_{total}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;=&space;1&space;-&space;\frac{SS_{res}}{SS_{total}}" title="R^{2} = 1 - \frac{SS_{res}}{SS_{total}}" /></a>  
 где <a href="https://www.codecogs.com/eqnedit.php?latex=SS_{res}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SS_{res}" title="SS_{res}" /></a> (residuals) - сумма квадратов остатков (расстояний до регрессионой прямой), а <a href="https://www.codecogs.com/eqnedit.php?latex=SS_{total}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SS_{total}" title="SS_{total}" /></a> - общая изменчивость (сумма квадратов расстояний до прямой <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;\overline{Y}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;\overline{Y}" title="y = \overline{Y}" /></a>). Таким образом, <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;\approx&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;\approx&space;1" title="R^{2} \approx 1" /></a> означает, что почти вся изменчивость переменной объясняется нашей регрессионной моделью.
 
 
