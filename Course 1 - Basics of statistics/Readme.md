@@ -211,7 +211,14 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;=&space;1&space;-&space;\frac{SS_{res}}{SS_{total}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;=&space;1&space;-&space;\frac{SS_{res}}{SS_{total}}" title="R^{2} = 1 - \frac{SS_{res}}{SS_{total}}" /></a>  
 где <a href="https://www.codecogs.com/eqnedit.php?latex=SS_{res}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SS_{res}" title="SS_{res}" /></a> (residuals) - сумма квадратов остатков (расстояний до регрессионой прямой), а <a href="https://www.codecogs.com/eqnedit.php?latex=SS_{total}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?SS_{total}" title="SS_{total}" /></a> - общая изменчивость (сумма квадратов расстояний до прямой <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;\overline{Y}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;\overline{Y}" title="y = \overline{Y}" /></a>). Таким образом, <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}&space;\approx&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}&space;\approx&space;1" title="R^{2} \approx 1" /></a> означает, что почти вся изменчивость переменной объясняется нашей регрессионной моделью.
 
+**Условия применимости:**
 
+1. Линейная взаимосвязь *X* и *Y*.  
+Если зависимость на самом деле нелинейна, то предсказание будет ошибочно. Пути ликвидации нелинейности:
+    * Трансформация Тьюки (Tukey Ladder of Powers) – возведение *X* в степень, теряется интерпретируемость.
+    * Логарифмическая трансформация (Log transformation) – взятие логарифма от *X* и/или *Y*, интерпретируемость коэффициента наклона <a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{1}" title="b_{1}" /></a>:
+    
+ 
 
 
 
