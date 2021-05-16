@@ -216,7 +216,54 @@
 1. Линейная взаимосвязь *X* и *Y*.  
 Если зависимость на самом деле нелинейна, то предсказание будет ошибочно. Пути ликвидации нелинейности:
     * Трансформация Тьюки (Tukey Ladder of Powers) – возведение *X* в степень, теряется интерпретируемость.
-    * Логарифмическая трансформация (Log transformation) – взятие логарифма от *X* и/или *Y*, интерпретируемость коэффициента наклона <a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{1}" title="b_{1}" /></a>:
+    * Логарифмическая трансформация (Log transformation) – взятие логарифма от *X* и/или *Y*, интерпретируемость коэффициента наклона <a href="https://www.codecogs.com/eqnedit.php?latex=b_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{1}" title="b_{1}" /></a>:  
+    a) <a href="https://www.codecogs.com/eqnedit.php?latex=log&space;Y&space;=&space;b_{0}&space;&plus;&space;b_{1}&space;\cdot&space;log&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?log&space;Y&space;=&space;b_{0}&space;&plus;&space;b_{1}&space;\cdot&space;log&space;X" title="log Y = b_{0} + b_{1} \cdot log X" /></a> - на сколько процентов увеличится значение зависимой переменной при изменении зависимой переменной на один процент.  
+    b) <a href="https://www.codecogs.com/eqnedit.php?latex=log&space;Y&space;=&space;b_{0}&space;&plus;&space;b_{1}&space;\cdot&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?log&space;Y&space;=&space;b_{0}&space;&plus;&space;b_{1}&space;\cdot&space;X" title="log Y = b_{0} + b_{1} \cdot X" /></a> – при единичном изменении переменной *X*, переменная *Y* в среднем изменяется на <a href="https://www.codecogs.com/eqnedit.php?latex=100&space;\cdot&space;b_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?100&space;\cdot&space;b_{1}" title="100 \cdot b_{1}" /></a> процентов.  
+    c) <a href="https://www.codecogs.com/eqnedit.php?latex=Y&space;=&space;b_{0}&space;&plus;&space;b_{1}&space;\cdot&space;log&space;X" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Y&space;=&space;b_{0}&space;&plus;&space;b_{1}&space;\cdot&space;log&space;X" title="Y = b_{0} + b_{1} \cdot log X" /></a>– изменение на 1% по *X* в среднем приводит к <a href="https://www.codecogs.com/eqnedit.php?latex=0.01&space;\cdot&space;b_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?0.01&space;\cdot&space;b_{1}" title="0.01 \cdot b_{1}" /></a> изменению по переменной *Y*.
+    * Трансформация Бокса-Кокса (Box-Cox transformation) – обычно используется для трансформации зависимой переменной в случае, если у нас есть ненормальное распределение ошибок и/или нелинейность взаимосвязи, а также в случае гетероскедастичности.
+2. Независимость наблюдений.  
+    Источники:  
+    * Повторные измерения (на разных уровнях независимой переменной): снижение чувствительности теста, искуственное увелечение мощности теста (псевдореплекация).  
+    * Повторные пробы (на одном и том же уровне независимой переменной): искажение результатов.  
+    * Кластеризация данных (нет повторных измерений, но данные взяты из нескольких гомогенных групп): искажение результатов.
+3. Независимость предикторов. Отсутствие мультиколлинеарности – линейной зависимости между предикорами.
+    * Абсолютная мультиколлинеарность – корреляция между двумя предикторами равна <a href="https://www.codecogs.com/eqnedit.php?latex=\pm&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pm&space;1" title="\pm 1" /></a>.  
+    * Если мы хотим только предсказывать значения, то мультиколлинеарность не проблема.
+    * Для выявления можно построить корреляционную матрицу.
+    * VIF (Variance Inflation Factor) – показывает, насколько хорошо предиктор объясняется другими предикторами. Если *VIF > 10*, то предиктор лучше исключить из модели. Квадратный корень из *VIF* показывает, во сколько раз стала больше стандартная ошибка данного коэффициента, по сравнению с ситуацией, если он был независим от других предикторов.
+4. Нормальное распределение остатков.
+5. Гомоскедастичность – постоянная изменчивость остатков на всех уровнях независимой переменной.
+    * Если мы построим регрессию, где зависимой переменной будет квадрат остатков модели *Y* ~ *X*, а независимой переменной будет предиктор *X*, и в этой модели окажется высокий и значимый <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}" title="R^{2}" /></a>, это означает, что в данных есть гетероскедастичность. Тест Бройша — Пагана (Breusch-Pagan test), тест Уайта (White test).
+6. Отсутствие автокорреляции остатков.
+
+**Множественная линейная регрессия**
+
+Позволяет исследовать влияние сразу нескольких независимых переменных на одну зависимую переменную: <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;b_{0}&space;&plus;&space;b_{1}&space;\cdot&space;x_{1}&space;&plus;&space;...&space;&plus;&space;b_{n}&space;\cdot&space;x_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;b_{0}&space;&plus;&space;b_{1}&space;\cdot&space;x_{1}&space;&plus;&space;...&space;&plus;&space;b_{n}&space;\cdot&space;x_{n}" title="y = b_{0} + b_{1} \cdot x_{1} + ... + b_{n} \cdot x_{n}" /></a>.
+
+К условиям применимости добавляются проверка на мультиколлинеарность (сильная связь или идентичность некоторых независимых переменных) и нормальное распределение переменных (желательно).
+
+**_Исправленный_** <a href="https://www.codecogs.com/eqnedit.php?latex=R^{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^{2}" title="R^{2}" /></a> – скорректированный коэффициент детерменации. Рассчитывается при включении в модель дополнительных независимых переменных.
+
+**Смешнная регрессионная модель**
+
+**_Эффект_** – влияние независимой переменной, с помощью которой мы предсказываем зависимую переменную.
+
+**_Фиксированный эффект_** _(main effect)_ – влияние независимой переменной, представляющее основной интерес для исследователя.
+
+**_Случайный эффект_** _(random mixed effect)_ – влияние независимой переменной, не представляющее основной интерес для исследователя.
+
+## Задача классификации
+
+**Логистическая регрессия** – исследование взаимосвязи между номинативной зависимой переменной, имеющей всего 2 градации, и различными независимыми переменными.
+
+**Кластерный анализ** – решает задачу кластеризации, то есть для каждго наблюдения находит те наблюдения, которые очень похожи на него, и те, которые от него отличаются. При этом мы снижаем размерность данных.
+
+## Анализ номинативных данных
+**Проверка гипотезы о распределении номинативной переменной**  
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}" title="H_{0}" /></a> – ожидаемое распределение, <a href="https://www.codecogs.com/eqnedit.php?latex=H_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{1}" title="H_{1}" /></a> – распределение отлично от ожидаемого.  
+Наблюдаемые частоты _O (observed)_, ожидаемые частоты _E (expected)_.  
+Все наблюдения независимы.
+
     
  
 
