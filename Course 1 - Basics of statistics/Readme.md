@@ -264,6 +264,31 @@
 Наблюдаемые частоты _O (observed)_, ожидаемые частоты _E (expected)_.  
 Все наблюдения независимы.
 
+**Расстояние <a href="https://www.codecogs.com/eqnedit.php?latex=\chi^{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\chi^{2}" title="\chi^{2}" /></a> Пирсона**  
+<a href="https://www.codecogs.com/eqnedit.php?latex=\chi^{2}&space;=&space;\sum_{i&space;=&space;1}^{n}\frac{(O_{i}&space;-&space;E_{i})^{2}}{E_{i}}&space;\in&space;\chi^{2}(n-1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\chi^{2}&space;=&space;\sum_{i&space;=&space;1}^{n}\frac{(O_{i}&space;-&space;E_{i})^{2}}{E_{i}}&space;\in&space;\chi^{2}(n-1)" title="\chi^{2} = \sum_{i = 1}^{n}\frac{(O_{i} - E_{i})^{2}}{E_{i}} \in \chi^{2}(n-1)" /></a>  
+
+**Распределение <a href="https://www.codecogs.com/eqnedit.php?latex=\chi^{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\chi^{2}" title="\chi^{2}" /></a> с *k* степенями свободы**
+
+Распределение суммы квадратов *k* независимых стандратных нормальных случайных величин <a href="https://www.codecogs.com/eqnedit.php?latex=()\mu&space;=&space;0,&space;D&space;=&space;1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?()\mu&space;=&space;0,&space;D&space;=&space;1)" title="()\mu = 0, D = 1)" /></a>.  
+
+**Проверка гипотезы о взаимосвязи двух доминативных переменных**
+
+Когда две номинативные переменные типа “причина-следствие”.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}" title="H_{0}" /></a> - распределение не отличается от ожидаемого, <a href="https://www.codecogs.com/eqnedit.php?latex=H_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{1}" title="H_{1}" /></a> – отлично от ожидаемого, иными словами существует взаимосвязь.
+
+Ожидаемая таблица – распределение одного признака абсолютно одинаково на всех факторах другого признака.
+
+Ячейки ожидаемой таблицы (ожидаемые частоты):
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=f_{ij}&space;=&space;\frac{f_{i}\cdot&space;f_{j}}{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{ij}&space;=&space;\frac{f_{i}\cdot&space;f_{j}}{N}" title="f_{ij} = \frac{f_{i}\cdot f_{j}}{N}" /></a>, где <a href="https://www.codecogs.com/eqnedit.php?latex=f_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{i}" title="f_{i}" /></a> – сумма в строке, <a href="https://www.codecogs.com/eqnedit.php?latex=f_{j}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_{j}" title="f_{j}" /></a>  – сумма в столбце, *N* – число измерений.
+
+При расчете используем распределение <a href="https://www.codecogs.com/eqnedit.php?latex=\chi&space;^{2}((n-1)\cdot&space;(m-1))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\chi&space;^{2}((n-1)\cdot&space;(m-1))" title="\chi ^{2}((n-1)\cdot (m-1))" /></a>, где *n* – число столбцов, *m* – число строк.
+
+Минимальное количество наблюдений в каждой ячейке должно быть больше 5.
+
+**Поправка Йетса**
+
     
  
 
