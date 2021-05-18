@@ -287,7 +287,23 @@
 
 Минимальное количество наблюдений в каждой ячейке должно быть больше 5.
 
-**Поправка Йетса**
+**Поправка Йетса**  
+В теории <a href="https://www.codecogs.com/eqnedit.php?latex=\chi&space;^{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\chi&space;^{2}" title="\chi ^{2}" /></a> непрерывно, тогда как вычисляемые значения всегда дискретны, в результате <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}" title="H_{0}" /></a> может отвергаться слишком часто. Применяется, когда некоторые ожидаемые частоты меньше 10.  
+<a href="https://www.codecogs.com/eqnedit.php?latex=\chi_{Yates}^{2}&space;=&space;\sum^k&space;\frac{(\left&space;|f_{0}&space;-&space;f_{e}\right&space;|&space;-&space;0.5)^{2}}{f_{e}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\chi_{Yates}^{2}&space;=&space;\sum^k&space;\frac{(\left&space;|f_{0}&space;-&space;f_{e}\right&space;|&space;-&space;0.5)^{2}}{f_{e}}" title="\chi_{Yates}^{2} = \sum^k \frac{(\left |f_{0} - f_{e}\right | - 0.5)^{2}}{f_{e}}" /></a>
+
+**Точный критерий Фишера**  
+Обычно используется, если нарушается одно из условий применимости критерия <a href="https://www.codecogs.com/eqnedit.php?latex=\chi^{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\chi^{2}" title="\chi^{2}" /></a>.
+
+## Логистическая регрессия
+
+Главная зависимая переменная – номинативная с двумя градациями, а качестве предикторов могут быть так и номинативные, так и количественные переменные.
+
+Переводим номинативную переменную в вероятность:  
+<a href="https://www.codecogs.com/eqnedit.php?latex=[0,1]\ni&space;p_{i}&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1,i}&space;&plus;&space;\beta_{2}x_{2,i}&space;&plus;&space;...&space;&plus;&space;\beta_{k}x_{k,i}\in&space;[-\infty,&space;&plus;\infty&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?[0,1]\ni&space;p_{i}&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1,i}&space;&plus;&space;\beta_{2}x_{2,i}&space;&plus;&space;...&space;&plus;&space;\beta_{k}x_{k,i}\in&space;[-\infty,&space;&plus;\infty&space;]" title="[0,1]\ni p_{i} = \beta_{0} + \beta_{1}x_{1,i} + \beta_{2}x_{2,i} + ... + \beta_{k}x_{k,i}\in [-\infty, +\infty ]" /></a>
+
+**_Odds (шансы)_** - отношение вероятности успеха (*Y* = 1) к вероятности неудачи (*Y* = 0).
+
+Odds всегда больше нуля, чтобы удовлетворить отрицательным значениям в правой части, возьмем натуральный логарифм.
 
     
  
